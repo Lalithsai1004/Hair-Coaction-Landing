@@ -133,7 +133,7 @@ const features = [
   },
 ]
 
-export default function HomePage() {
+export default function AppPage() {
   const { scrollYProgress } = useScroll()
   const y = useTransform(scrollYProgress, [0, 1], ["0%", "50%"])
   const { isSignedIn, user } = useUser()
