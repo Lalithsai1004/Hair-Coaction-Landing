@@ -53,9 +53,16 @@ export const FloatingNav = ({
             <span className="hidden sm:block text-sm">{navItem.name}</span>
           </a>
         ))}
-        <button className="border text-sm font-medium relative border-neutral-200 text-black px-4 py-2 rounded-full bg-gradient-to-r from-pink-500 to-orange-500 text-white hover:from-pink-600 hover:to-orange-600 transition-all">
-          <span>Get Started</span>
-        </button>
+          <a
+               href="https://hair-coke.vercel.app/"
+               target="_blank"
+                rel="noopener noreferrer"
+            >
+            <button className="border text-sm font-medium relative border-neutral-200 text-black px-4 py-2 rounded-full bg-gradient-to-r from-pink-500 to-orange-500 text-white hover:from-pink-600 hover:to-orange-600 transition-all">
+             Get Started
+           </button>
+          </a>
+
       </motion.div>
     </AnimatePresence>
   )

@@ -31,6 +31,7 @@ import { LampContainer } from "@/components/ui/lamp"
 import { CardHoverEffect } from "@/components/ui/card-hover-effect"
 import { GlowingStars } from "@/components/ui/glowing-stars"
 import { MovingBorder } from "@/components/ui/moving-border"
+import Link from 'next/link';
 import { SignInButton, SignUpButton, UserButton, useUser } from "@clerk/clerk-react"
 
 const navItems = [
@@ -323,13 +324,15 @@ export default function HomePage() {
                     </>
                   ) : (
                     <div className="flex items-center gap-4">
-                      <Button
-                        size="lg"
-                        className="bg-gradient-to-r from-pink-500 via-orange-500 to-peach-500 hover:from-pink-600 hover:via-orange-600 hover:to-peach-600 text-white px-12 py-6 text-xl rounded-full shadow-2xl hover:shadow-3xl transition-all duration-300"
-                      >
-                        Go to Dashboard
-                        <ArrowRight className="ml-2 h-6 w-6" />
-                      </Button>
+                     
+                         <Button
+                               size="lg"
+                              className="bg-gradient-to-r from-pink-500 via-orange-500 to-peach-500 hover:from-pink-600 hover:via-orange-600 hover:to-peach-600 text-white px-12 py-6 text-xl rounded-full shadow-2xl hover:shadow-3xl transition-all duration-300"
+                                >
+                                  Go to Dashboard
+                         <ArrowRight className="ml-2 h-6 w-6" />
+                          </Button>
+                      
                       <div className="flex items-center gap-2 text-gray-700">
                         <span>Welcome back, {user?.firstName}!</span>
                         <UserButton afterSignOutUrl="/" />

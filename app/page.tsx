@@ -39,6 +39,7 @@ const navItems = [
   { name: "Vision", link: "#vision", icon: <Heart className="h-4 w-4" /> },
   { name: "Solution", link: "#solution", icon: <Brain className="h-4 w-4" /> },
   { name: "Team", link: "#team", icon: <Users className="h-4 w-4" /> },
+   { name: "Get Started", link: "https://hair-coke.vercel.app/", isButton: true }
 ]
 
 const heroProducts = [
