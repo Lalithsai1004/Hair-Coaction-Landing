@@ -11,7 +11,7 @@ interface SparklesProps {
   className?: string
   particleColor?: string
 }
-
+export const dynamic = "force-dynamic"; 
 export const SparklesCore = (props: SparklesProps) => {
   const {
     id,

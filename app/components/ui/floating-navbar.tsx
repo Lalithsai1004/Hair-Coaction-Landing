@@ -4,7 +4,7 @@ import type React from "react"
 import { useState } from "react"
 import { motion, AnimatePresence } from "framer-motion"
 import { cn } from "@/lib/utils"
-
+export const dynamic = "force-dynamic"; 
 export const FloatingNav = ({
   navItems,
   className,

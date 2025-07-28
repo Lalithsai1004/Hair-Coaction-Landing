@@ -10,6 +10,7 @@ import {
   ToastViewport,
 } from "@/app/components/ui/toast"
 
+export const dynamic = "force-dynamic"; 
 export function Toaster() {
   const { toasts } = useToast()
 
