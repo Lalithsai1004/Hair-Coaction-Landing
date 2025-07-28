@@ -1,7 +1,7 @@
 "use client"
 
 import { SignUpButton, SignInButton, UserButton } from "@clerk/nextjs"
-import { Button } from "@/components/ui/button"
+import { Button } from "@/app/components/ui/button"
 import { motion } from "framer-motion"
 import { UserPlus, LogIn } from "lucide-react"
 

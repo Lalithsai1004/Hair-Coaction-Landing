@@ -1,9 +1,9 @@
 "use client"
 import { useEffect } from "react"
 import { motion, useScroll, useTransform } from "framer-motion"
-import { Button } from "@/components/ui/button"
-import { Card, CardContent } from "@/components/ui/card"
-import { Badge } from "@/components/ui/badge"
+import { Button } from "@/app/components/ui/button"
+import { Card, CardContent } from "@/app/components/ui/card"
+import { Badge } from "@/app/components/ui/badge"
 import {
   ArrowRight,
   Users,
@@ -17,20 +17,20 @@ import {
   LogIn,
   UserPlus,
 } from "lucide-react"
-import { HeroParallax } from "@/components/ui/hero-parallax"
-import { BackgroundBeams } from "@/components/ui/background-beams"
-import { TextGenerateEffect } from "@/components/ui/text-generate-effect"
-import { FloatingNav } from "@/components/ui/floating-navbar"
-import { SparklesCore } from "@/components/ui/sparkles"
-import { WavyBackground } from "@/components/ui/wavy-background"
-import { BentoGrid, BentoGridItem } from "@/components/ui/bento-grid"
-import { InfiniteMovingCards } from "@/components/ui/infinite-moving-cards"
-import { AuroraBackground } from "@/components/ui/aurora-background"
-import { Meteors } from "@/components/ui/meteors"
-import { LampContainer } from "@/components/ui/lamp"
-import { CardHoverEffect } from "@/components/ui/card-hover-effect"
-import { GlowingStars } from "@/components/ui/glowing-stars"
-import { MovingBorder } from "@/components/ui/moving-border"
+import { HeroParallax } from "@/app/components/ui/hero-parallax"
+import { BackgroundBeams } from "@/app/components/ui/background-beams"
+import { TextGenerateEffect } from "@/app/components/ui/text-generate-effect"
+import { FloatingNav } from "@/app/components/ui/floating-navbar"
+import { SparklesCore } from "@/app/components/ui/sparkles"
+import { WavyBackground } from "@/app/components/ui/wavy-background"
+import { BentoGrid, BentoGridItem } from "@/app/components/ui/bento-grid"
+import { InfiniteMovingCards } from "@/app/components/ui/infinite-moving-cards"
+import { AuroraBackground } from "@/app/components/ui/aurora-background"
+import { Meteors } from "@/app/components/ui/meteors"
+import { LampContainer } from "@/app/components/ui/lamp"
+import { CardHoverEffect } from "@/app/components/ui/card-hover-effect"
+import { GlowingStars } from "@/app/components/ui/glowing-stars"
+import { MovingBorder } from "@/app/components/ui/moving-border"
 import Link from 'next/link';
 import { SignInButton, SignUpButton, UserButton, useUser } from "@clerk/clerk-react"
 
