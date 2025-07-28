@@ -1,11 +1,12 @@
 "use client"
+export const dynamic = "force-dynamic";
 import { cn } from "@/lib/utils"
 import type React from "react"
 
 import { AnimatePresence, motion } from "framer-motion"
 import Link from "next/link"
 import { useState } from "react"
-export const dynamic = "force-dynamic";
+
 export const CardHoverEffect = ({
   items,
   className,

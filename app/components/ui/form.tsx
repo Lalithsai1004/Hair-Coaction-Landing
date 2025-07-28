@@ -1,5 +1,5 @@
 "use client"
-
+export const dynamic = "force-dynamic";
 import * as React from "react"
 import * as LabelPrimitive from "@radix-ui/react-label"
 import { Slot } from "@radix-ui/react-slot"
@@ -23,7 +23,7 @@ type FormFieldContextValue<
 > = {
   name: TName
 }
-export const dynamic = "force-dynamic"; 
+
 const FormFieldContext = React.createContext<FormFieldContextValue>(
   {} as FormFieldContextValue
 )

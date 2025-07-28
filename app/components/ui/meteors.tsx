@@ -1,7 +1,8 @@
 "use client"
+export const dynamic = "force-dynamic";
 import { cn } from "@/lib/utils"
 import { useEffect, useState } from "react"
-export const dynamic = "force-dynamic"; 
+ 
 export const Meteors = ({
   number,
   className,

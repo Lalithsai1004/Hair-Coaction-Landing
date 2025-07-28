@@ -1,4 +1,5 @@
 "use client"
+export const dynamic = "force-dynamic";
 import { useEffect, useState } from "react"
 import { cn } from "@/lib/utils"
 
@@ -11,7 +12,7 @@ interface SparklesProps {
   className?: string
   particleColor?: string
 }
-export const dynamic = "force-dynamic"; 
+
 export const SparklesCore = (props: SparklesProps) => {
   const {
     id,

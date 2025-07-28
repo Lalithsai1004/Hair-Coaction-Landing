@@ -1,8 +1,8 @@
 "use client"
-
+export const dynamic = "force-dynamic";
 import { cn } from "@/lib/utils"
 import React, { useEffect, useState } from "react"
-export const dynamic = "force-dynamic"; 
+
 export const InfiniteMovingCards = ({
   items,
   direction = "left",

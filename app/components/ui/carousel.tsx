@@ -1,5 +1,5 @@
 "use client"
-
+export const dynamic = "force-dynamic";
 import * as React from "react"
 import useEmblaCarousel, {
   type UseEmblaCarouselType,
@@ -8,7 +8,7 @@ import { ArrowLeft, ArrowRight } from "lucide-react"
 
 import { cn } from "@/lib/utils"
 import { Button } from "@/app/components/ui/button"
-export const dynamic = "force-dynamic";
+
 
 type CarouselApi = UseEmblaCarouselType[1]
 type UseCarouselParameters = Parameters<typeof useEmblaCarousel>

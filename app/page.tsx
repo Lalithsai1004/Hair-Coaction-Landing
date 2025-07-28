@@ -1,4 +1,5 @@
 "use client"
+export const dynamic = "force-dynamic";
 import { useEffect } from "react"
 import { motion, useScroll, useTransform } from "framer-motion"
 import { Button } from "@/app/components/ui/button"
@@ -33,7 +34,7 @@ import { CardHoverEffect } from "@/app/components/ui/card-hover-effect"
 import { GlowingStars } from "@/app/components/ui/glowing-stars"
 import { MovingBorder } from "@/app/components/ui/moving-border"
 import { SignInButton, SignUpButton, UserButton, useUser } from "@clerk/nextjs"
-export const dynamic = "force-dynamic";
+
 const navItems = [
   { name: "Problem", link: "#problem", icon: <Target className="h-4 w-4" /> },
   { name: "Vision", link: "#vision", icon: <Heart className="h-4 w-4" /> },

@@ -1,10 +1,10 @@
 "use client"
-
+export const dynamic = "force-dynamic";
 import { useTheme } from "next-themes"
 import { Toaster as Sonner } from "sonner"
 
 type ToasterProps = React.ComponentProps<typeof Sonner>
-export const dynamic = "force-dynamic"; 
+
 const Toaster = ({ ...props }: ToasterProps) => {
   const { theme = "system" } = useTheme()
 

@@ -1,10 +1,10 @@
 "use client"
-
+export const dynamic = "force-dynamic";
 import { SignUpButton, SignInButton, UserButton } from "@clerk/nextjs"
 import { Button } from "@/app/components/ui/button"
 import { motion } from "framer-motion"
 import { UserPlus, LogIn } from "lucide-react"
-export const dynamic = "force-dynamic";
+
 
 export function ClientSignUpButton() {
   return (

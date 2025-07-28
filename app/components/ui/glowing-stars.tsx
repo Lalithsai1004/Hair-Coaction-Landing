@@ -1,6 +1,7 @@
 "use client"
+export const dynamic = "force-dynamic";
 import { useEffect, useRef } from "react"
-export const dynamic = "force-dynamic"; 
+ 
 export const GlowingStars = () => {
   const canvasRef = useRef<HTMLCanvasElement>(null)
 

@@ -1,7 +1,9 @@
 "use client"
+export const dynamic = "force-dynamic";
 import { cn } from "@/lib/utils"
 import { useEffect, useState } from "react"
-export const dynamic = "force-dynamic";
+
+
 export const BackgroundBeams = ({ className }: { className?: string }) => {
   const [beams, setBeams] = useState<
     { left: string; top: string; animationDelay: string; animationDuration: string }[]

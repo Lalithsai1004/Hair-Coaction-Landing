@@ -1,9 +1,9 @@
 "use client"
+export const dynamic = "force-dynamic";
 import React from "react"
 import { motion, useScroll, useTransform, useSpring } from "framer-motion"
 import Image from "next/image"
 import Link from "next/link"
-export const dynamic = "force-dynamic"; 
 export const HeroParallax = ({
   products,
   children,

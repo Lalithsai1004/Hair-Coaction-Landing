@@ -1,5 +1,5 @@
 "use client"
-
+export const dynamic = "force-dynamic";
 import { useToast } from "@/hooks/use-toast"
 import {
   Toast,
@@ -10,7 +10,7 @@ import {
   ToastViewport,
 } from "@/app/components/ui/toast"
 
-export const dynamic = "force-dynamic"; 
+
 export function Toaster() {
   const { toasts } = useToast()
 
