@@ -1,27 +1,18 @@
-import type React from "react"
-import type { Metadata } from "next"
-import { Inter } from "next/font/google"
-import { ClerkProvider } from "@clerk/nextjs"
-import "./globals.css"
+// app/layout.tsx
+import "./globals.css";
+import { Inter } from "next/font/google";
 
-const inter = Inter({ subsets: ["latin"] })
+const inter = Inter({ subsets: ["latin"] });
 
-export const metadata: Metadata = {
-  title: "HAIR COACTION - Revolutionizing Hair Health",
-  description: "AI-powered personalized hair care solutions for unique hair textures, scalp types, and volumes.",
-  generator: 'v0.dev'
-}
+export const metadata = {
+  title: "Hair Coaction",
+  description: "Landing page",
+};
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode
-}) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <ClerkProvider publishableKey={process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY}>
-      <html lang="en">
-        <body className={inter.className}>{children}</body>
-      </html>
-    </ClerkProvider>
-  )
+    <html lang="en">
+      <body className={inter.className}>{children}</body>
+    </html>
+  );
 }

@@ -1,9 +1,14 @@
-import {authMiddleWare} from "@clerk/nextjs/server";
+// middleware.ts
+import { authMiddleware } from "@clerk/nextjs/server";
 
-export default authMiddleWare({
-  publicRoutes: ["/"], // Only '/' is public, rest are protected
+export default authMiddleware({
+  // Protect everything except the homepage and static files
+  publicRoutes: ["/", "/sign-in", "/sign-up", "/favicon.ico"],
+
+  // Optional: Only run on specific paths (good for performance)
+  ignoredRoutes: ["/api/webhook(.*)"], // example if you want to ignore some API routes too
 });
 
 export const config = {
-  matcher: ["/((?!.+\\.[\\w]+$|_next).*)", "/", "/(api|trpc)(.*)"],
+  matcher: ["/((?!_next|favicon.ico|.*\\..*).*)"], // Match everything except static files
 };
